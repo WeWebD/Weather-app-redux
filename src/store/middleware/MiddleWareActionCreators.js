@@ -1,0 +1,10 @@
+export const GET_GEO_WEATHER = "weather/getGeoWeather";
+export const SET_LOADING = "weather/setLoading";
+export const SET_ERROR = "weather/setError";
+export const SET_GEODATA = "weather/setGeoData";
+export const SET_WEATHER = "weather/setWeather";
+export const LOAD_WEATHER = "weather/loadWeather";
+export const LOAD_WEATHER_ASYNC = "weather/loadWeatherAsync";
+export const SET_AIR_QUALITY = "weather/setAirQuality";
+export const TOGGLE_UNIT = "weather/toggleUnit";
+export const SET_UNITS = "weather/setUnits";

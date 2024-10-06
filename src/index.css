@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700&display=swap");
+
+html,
+body,
+label {
+  font-family: "Roboto", sans-serif;
+}
+
+@layer utilities {
+  @variants responsive {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+  }
+}
+
+@layer base {
+  .morning-theme {
+    --gradient-primary: #0b61cb;
+    --gradient-mid: #0b61cb;
+    --gradient-secondary: #afe3fd;
+    --text-white: #ffffff;
+  }
+
+  .early-morning-theme {
+    --gradient-primary: #7985b5;
+    --gradient-mid: #7985b5;
+    --gradient-secondary: #dbf9ff;
+    --text-white: #ffffff;
+  }
+
+  .evening-theme {
+    --gradient-primary: #243865;
+    --gradient-mid: #939190;
+    --gradient-secondary: #ca9b67;
+    --text-white: #dddddd;
+  }
+
+  .night-theme {
+    --gradient-primary: #0c031b;
+    --gradient-mid: #0c031b;
+    --gradient-secondary: #006bba;
+    --text-white: #ffffff;
+  }
+}
+
+.scroll-blur {
+    backdrop-filter: blur(30px);
+    mask-image: linear-gradient(black 20%, transparent);
+}
